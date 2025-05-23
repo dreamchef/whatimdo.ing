@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>whatimdo.ing</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 50px; line-height: 1.4; }
+    ul { list-style: none; padding-left: 1em; }
+    li::before { content: "• "; color: #888; }
+    details { cursor: pointer; }
+    summary { outline: none; }
+  </style>
+</head>
+<body>
+  <h1>whatimdo.ing</h1>
+  <div id="content"></div>
+
+  <script>
+    fetch('content.json').then(r => r.json()).then(buildTree);
+
+    function buildTree(data, parent = document.getElementById('content')) {
+      const ul = document.createElement('ul');
+      parent.appendChild(ul);
+
+      data.forEach(item => {
+        const li = document.createElement('li');
+        ul.appendChild(li);
+
+        if (item.children) {
+          const details = document.createElement('details');
+          const summary = document.createElement('summary');
+          summary.textContent = item.name;
+          details.appendChild(summary);
+          li.appendChild(details);
+          buildTree(item.children, details);
+        } else {
+          li.textContent = item.name;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

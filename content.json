@@ -1,0 +1,24 @@
+[
+  {
+    "name": "AI Market",
+    "children": [
+      {
+        "name": "Supply Chain",
+        "children": [
+          { "name": "Reviewing Stanford 2025 AI Index" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cognition",
+    "children": [
+      {
+        "name": "Augmented Cognition",
+        "children": [
+          { "name": "Exploring Prime Drivers Ratings" }
+        ]
+      }
+    ]
+  }
+]
