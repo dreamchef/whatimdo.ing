@@ -11,13 +11,10 @@
     ]
   },
   {
-    "name": "Cognition",
+    "name": "Augmented Cognition",
     "children": [
       {
-        "name": "Augmented Cognition",
-        "children": [
-          { "name": "Exploring Prime Drivers Ratings" }
-        ]
+        "name": "Schedule Optimization"
       }
     ]
   }
