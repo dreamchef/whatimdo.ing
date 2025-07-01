@@ -1,21 +1,28 @@
 [
   {
-    "name": "AI Market",
-    "children": [
-      {
-        "name": "Supply Chain",
-        "children": [
-          { "name": "Reviewing Stanford 2025 AI Index" }
-        ]
-      }
-    ]
+    "name": "Building VibeRank",
   },
   {
-    "name": "Augmented Cognition",
+    "name": "Build Queue",
     "children": [
       {
-        "name": "Schedule Optimization"
+        "name": "Micro-Training Protocol"
+      },
+      {
+        "name": "Assistance Learning - AI Apprentice Framework"
+      },
+      {
+        "name": "Crowdsourced Alignment Data Hub"
+      },
+      {
+        "name": "Prompt-Driven Custom Benchmark-Maker with LLM Cross Comparison"
+      },
+      {
+        "name": "Data Novelty-Usefulness Token Incentive Network"
       }
     ]
   }
+  {
+    "name": "Speculating subnets on Bittensor.",
+  },
 ]
